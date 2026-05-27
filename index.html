@@ -136,10 +136,10 @@ var appLink = document.getElementById('app-link');
 var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 appLink.addEventListener('click', function(e) {
 e.preventDefault();
-if (/android/i.test(userAgent)) {
-window.location.href = 'https://play.google.com/store/apps/details?id=com.cicclo.lavblue';
-} else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
 window.location.href = 'https://apps.apple.com/br/app/lavblue-com/id6446894086';
+} else if (/android/i.test(userAgent)) {
+window.location.href = 'https://play.google.com/store/apps/details?id=com.cicclo.lavblue';
 } else {
 window.location.href = 'https://play.google.com/store/apps/details?id=com.cicclo.lavblue';
 }
