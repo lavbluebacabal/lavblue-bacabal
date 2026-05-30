@@ -1,169 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="apple-itunes-app" content="app-id=123456789">
-    <title>Lavblue – Download App</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #1a237e, #0d47a1, #1565c0, #1976d2);
-            padding: 1rem;
-        }
-
-        .card {
-            background: #ffffff;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-            padding: 2.5rem 2rem;
-            max-width: 420px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #1a237e;
-            letter-spacing: -0.5px;
-            margin-bottom: 0.25rem;
-        }
-
-        .subtitle {
-            color: #546e7a;
-            font-size: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding: 1rem 1.25rem;
-            margin: 0.6rem 0;
-            border: none;
-            border-radius: 14px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-decoration: none;
-            color: #ffffff;
-            gap: 0.75rem;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-        }
-
-        .btn:active {
-            transform: scale(0.97);
-        }
-
-        .btn-icon {
-            font-size: 1.3rem;
-            line-height: 1;
-        }
-
-        .btn-app {
-            background: linear-gradient(135deg, #1a237e, #0d47a1);
-            color: #fff;
-        }
-
-        .btn-google {
-            background: #4285F4;
-        }
-
-        .btn-whatsapp {
-            background: #25D366;
-        }
-
-        .btn-instagram {
-            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-        }
-
-        .btn-facebook {
-            background: #1877F2;
-        }
-
-        .separator {
-            margin: 1.5rem 0 1rem;
-            border: none;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #cfd8dc, transparent);
-        }
-
-        .footer-note {
-            color: #78909c;
-            font-size: 0.8rem;
-            margin-top: 1.5rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>LavBlue - Baixe o App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #0a2540;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      background: #0d2f4a;
+      border-radius: 20px;
+      padding: 40px 30px 30px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .logo {
+      max-width: 250px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    p.sub {
+      color: #a0c4e0;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 14px 20px;
+      margin-bottom: 12px;
+      border: none;
+      border-radius: 50px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+    .btn:active {
+      transform: translateY(0);
+    }
+    .btn-google {
+      background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+    }
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25d366 0%, #128C7E 100%);
+    }
+    .btn-instagram {
+      background: linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%);
+    }
+    .btn-facebook {
+      background: linear-gradient(135deg, #3b5998 0%, #8b9dc3 100%);
+    }
+    .btn-app {
+      background: linear-gradient(135deg, #0f9d58 0%, #1e8e3e 100%);
+    }
+    .btn i {
+      font-size: 20px;
+    }
+    .separator {
+      margin: 20px 0;
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+    }
+    /* Spinner */
+    #loading-spinner {
+      display: none;
+      margin: 15px auto;
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255,255,255,0.3);
+      border-top-color: #ffffff;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    #redirection-message {
+      display: none;
+      color: #a0c4e0;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .footer-text {
+      color: #6090b0;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <div class="card">
-        <div class="logo">Lavblue</div>
-        <div class="subtitle">Connect with us</div>
+  <div class="container">
+    <img class="logo" src="https://lavblue.com.br/wp-content/uploads/2024/08/LOGO-LAVBLUE-2024-02-1024x300.png" alt="LavBlue Logo">
+    <h1>Baixe o App</h1>
+    <p class="sub">Lavanderia inteligente na palma da sua mão</p>
 
-        <!-- App Download Button -->
-        <button class="btn btn-app" id="appBtn">
-            <span class="btn-icon">📲</span> Download App
-        </button>
+    <button class="btn btn-google" onclick="window.open('https://play.google.com/store/apps/details?id=com.cicclo.lavblue', '_blank')">
+      <i class="fab fa-google-play"></i> Google Play
+    </button>
+    <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </button>
+    <button class="btn btn-instagram" onclick="window.open('https://www.instagram.com/lavblue/', '_blank')">
+      <i class="fab fa-instagram"></i> Instagram
+    </button>
+    <button class="btn btn-facebook" onclick="window.open('https://www.facebook.com/lavblue/', '_blank')">
+      <i class="fab fa-facebook-f"></i> Facebook
+    </button>
 
-        <hr class="separator">
+    <hr class="separator">
 
-        <!-- Other buttons -->
-        <a class="btn btn-google" href="https://www.google.com/search?q=Lavblue" target="_blank" rel="noopener">
-            <span class="btn-icon">🔍</span> Google
-        </a>
-        <a class="btn btn-whatsapp" href="https://wa.me/1234567890?text=Hi%20Lavblue" target="_blank" rel="noopener">
-            <span class="btn-icon">💬</span> WhatsApp
-        </a>
-        <a class="btn btn-instagram" href="https://instagram.com/lavblue" target="_blank" rel="noopener">
-            <span class="btn-icon">📷</span> Instagram
-        </a>
-        <a class="btn btn-facebook" href="https://facebook.com/lavblue" target="_blank" rel="noopener">
-            <span class="btn-icon">👍</span> Facebook
-        </a>
+    <button class="btn btn-app" id="btn-baixe-app" onclick="redirectToApp()">
+      <i class="fas fa-download"></i> Baixe o App
+    </button>
 
-        <div class="footer-note">© 2025 Lavblue. All rights reserved.</div>
-    </div>
+    <div id="loading-spinner"></div>
+    <div id="redirection-message">Redirecionando para loja de aplicativos...</div>
 
-    <script>
-        document.getElementById('appBtn').addEventListener('click', function() {
-            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.lavblue.app';
-            const appStoreUrl = 'https://apps.apple.com/app/lavblue/id123456789';
+    <p class="footer-text">Ao clicar, você será direcionado à loja oficial.</p>
+  </div>
 
-            // Android detection
-            if (/android/i.test(userAgent)) {
-                window.location.href = playStoreUrl;
-            }
-            // iOS detection (iPhone, iPad, iPod)
-            else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                // Direct redirection – user gesture prevents white screen
-                window.location.href = appStoreUrl;
-            }
-            // Fallback for desktop or other devices – open both stores or modal?
-            else {
-                // You can show a small modal or just redirect to a generic page
-                // Here we simply open App Store as default (most common)
-                window.location.href = appStoreUrl;
-            }
-        });
-    </script>
+  <script>
+    function redirectToApp() {
+      // Show spinner and message
+      document.getElementById('loading-spinner').style.display = 'block';
+      document.getElementById('redirection-message').style.display = 'block';
+
+      // Detect platform and set URL
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      var appUrl;
+
+      if (/android/i.test(userAgent)) {
+        appUrl = 'https://play.google.com/store/apps/details?id=com.cicclo.lavblue';
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        appUrl = 'https://apps.apple.com/us/app/lavblue-com/id6750488253';
+      } else {
+        // Fallback for desktop / others
+        appUrl = 'https://play.google.com/store/apps/details?id=com.cicclo.lavblue';
+      }
+
+      // Delay to show spinner, then redirect
+      setTimeout(function() {
+        window.location.href = appUrl;
+      }, 2000);
+    }
+  </script>
 </body>
 </html>
