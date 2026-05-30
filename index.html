@@ -1,157 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>LavBlue - Baixe o App</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      background: #0a2540;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 20px;
-    }
-    .container {
-      background: #0d2f4a;
-      border-radius: 20px;
-      padding: 40px 30px 30px;
-      max-width: 400px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-    .logo {
-      max-width: 250px;
-      width: 100%;
-      height: auto;
-      margin-bottom: 30px;
-    }
-    h1 {
-      color: #ffffff;
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-    p.sub {
-      color: #a0c4e0;
-      font-size: 14px;
-      margin-bottom: 25px;
-    }
-    .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      width: 100%;
-      padding: 14px 20px;
-      margin-bottom: 12px;
-      border: none;
-      border-radius: 50px;
-      color: #fff;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-      text-decoration: none;
-    }
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-    }
-    .btn:active {
-      transform: translateY(0);
-    }
-    .btn-google {
-      background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
-    }
-    .btn-whatsapp {
-      background: linear-gradient(135deg, #25d366 0%, #128C7E 100%);
-    }
-    .btn-instagram {
-      background: linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%);
-    }
-    .btn-facebook {
-      background: linear-gradient(135deg, #3b5998 0%, #8b9dc3 100%);
-    }
-    .btn-app {
-      background: linear-gradient(135deg, #0f9d58 0%, #1e8e3e 100%);
-    }
-    .btn i {
-      font-size: 20px;
-    }
-    .separator {
-      margin: 20px 0;
-      border: 0;
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
-    }
-    /* Spinner */
-    #loading-spinner {
-      display: none;
-      margin: 15px auto;
-      width: 40px;
-      height: 40px;
-      border: 4px solid rgba(255,255,255,0.3);
-      border-top-color: #ffffff;
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-    #redirection-message {
-      display: none;
-      color: #a0c4e0;
-      font-size: 14px;
-      margin-top: 10px;
-    }
-    .footer-text {
-      color: #6090b0;
-      font-size: 12px;
-      margin-top: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lavblue Bacabal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #0a2540;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+padding: 20px;
+}
+.container {
+max-width: 400px;
+width: 100%;
+text-align: center;
+}
+.logo-container {
+margin-bottom: 30px;
+padding: 10px;
+}
+.logo-container img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+.subtitle {
+font-size: 1rem;
+color: #ccc;
+margin-bottom: 30px;
+}
+.buttons {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.btn {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+padding: 15px 20px;
+border: none;
+border-radius: 50px;
+font-size: 1.1rem;
+font-weight: 600;
+text-decoration: none;
+color: #fff;
+cursor: pointer;
+transition: transform 0.2s, box-shadow 0.2s;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.btn i {
+font-size: 1.3rem;
+width: 24px;
+text-align: center;
+}
+.btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+.btn:active {
+transform: translateY(0);
+}
+.btn-google {
+background: linear-gradient(135deg, #4285F4, #EA4335, #FBBC05, #34A853);
+}
+.btn-whatsapp {
+background: linear-gradient(135deg, #25D366, #128C7E);
+}
+.btn-instagram {
+background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF);
+}
+.btn-facebook {
+background: linear-gradient(135deg, #1877F2, #0C5B9A);
+}
+.btn-app {
+background: linear-gradient(135deg, #00b0f0, #0a2540);
+border: 2px solid #00b0f0;
+}
+.footer {
+margin-top: 30px;
+font-size: 0.8rem;
+color: #88a;
+}
+@media (max-width: 480px) {
+.btn {
+font-size: 1rem;
+padding: 12px 15px;
+}
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <img class="logo" src="https://lavblue.com.br/wp-content/uploads/2024/08/LOGO-LAVBLUE-2024-02-1024x300.png" alt="LavBlue Logo">
-    <h1>Baixe o App</h1>
-    <p class="sub">Lavanderia inteligente na palma da sua mão</p>
-
-    <button class="btn btn-google" onclick="window.open('https://play.google.com/store/apps/details?id=com.cicclo.lavblue', '_blank')">
-      <i class="fab fa-google-play"></i> Google Play
-    </button>
-    <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/5511999999999', '_blank')">
-      <i class="fab fa-whatsapp"></i> WhatsApp
-    </button>
-    <button class="btn btn-instagram" onclick="window.open('https://www.instagram.com/lavblue/', '_blank')">
-      <i class="fab fa-instagram"></i> Instagram
-    </button>
-    <button class="btn btn-facebook" onclick="window.open('https://www.facebook.com/lavblue/', '_blank')">
-      <i class="fab fa-facebook-f"></i> Facebook
-    </button>
-
-    <hr class="separator">
-
-    <button class="btn btn-app" id="btn-baixe-app" onclick="redirectToApp()">
-      <i class="fas fa-download"></i> Baixe o App
-    </button>
-
-    <div id="loading-spinner"></div>
-    <div id="redirection-message">Redirecionando para loja de aplicativos...</div>
-
-    <p class="footer-text">Ao clicar, você será direcionado à loja oficial.</p>
-  </div>
-
+<div class="container">
+<div class="logo-container">
+<img src="https://lavblue.com.br/wp-content/uploads/2024/08/LOGO-LAVBLUE-2024-02-1024x300.png" alt="Lavblue Logo">
+</div>
+<p class="subtitle">Unidade Bacabal - Sua lavanderia de confiança</p>
+<div class="buttons">
+<a href="#" class="btn btn-app" id="app-link">
+<i class="fas fa-mobile-alt"></i> Baixe o App
+</a>
+<a href="https://g.page/r/Ca8efY-Cw3JVEAI/review" target="_blank" class="btn btn-google">
+<i class="fab fa-google"></i> Avalie no Google
+</a>
+<a href="https://wa.me/5599984243919?text=Olá!" target="_blank" class="btn btn-whatsapp">
+<i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+<a href="https://www.instagram.com/lavbluebacabal/" target="_blank" class="btn btn-instagram">
+<i class="fab fa-instagram"></i> Instagram
+</a>
+<a href="https://www.facebook.com/lavbluebacabal/" target="_blank" class="btn btn-facebook">
+<i class="fab fa-facebook-f"></i> Facebook
+</a>
+</div>
+<div class="footer">
+© 2026 Lavblue.com - Todos os direitos reservados.
+</div>
+</div>
   <script>
     function redirectToApp() {
       // Show spinner and message
